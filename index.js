@@ -1,6 +1,9 @@
-const name = 'Kazy';
-const job = 'Developer';
+function greetOne() {
+  console.log('Hello!');
+}
 
-const string = `Hi! My name is ${name} and I'm a ${job}.`;
+const greetTwo = () => {
+  console.log('Hello there!');
+};
 
-console.log(string);
+// names.map(() => 'Hello');
