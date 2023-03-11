@@ -1,9 +1,5 @@
-function greetOne() {
-  console.log('Hello!');
-}
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 
-const greetTwo = () => {
-  console.log('Hello there!');
-};
-
-// names.map(() => 'Hello');
+console.log('Hello!');
