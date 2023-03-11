@@ -1,8 +1,6 @@
-const heroes = ['Kazy', 'Kalethyr', 'Mythwind'];
-const blog = { title: 'New and Improved', author: 'Korgash' };
+const name = 'Kazy';
+const job = 'Developer';
 
-// console.log(...heroes);
+const string = `Hi! My name is ${name} and I'm a ${job}.`;
 
-const idBlog = { ...blog, id: 1 };
-
-console.log(idBlog);
+console.log(string);
