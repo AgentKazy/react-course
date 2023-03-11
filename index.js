@@ -1,6 +1,20 @@
-import { people, greet } from './people.js';
-import abc from './people.js';
+const people = [
+  { name: 'Kazy', rank: 'Hero' },
+  { name: 'Kalethyr', rank: 'Adventurer' },
+  { name: 'Mythwind', rank: 'Hero' },
+  { name: 'Kaelar', rank: 'Captain' },
+];
 
-console.log(abc);
+// Filter method
+const rank = people.filter((person) => {
+  return person.rank == 'Hero';
+});
 
-greet();
+console.log(rank, people);
+
+// Map method
+const names = people.map((char) => {
+  return char.name;
+});
+
+console.log(names, people);
