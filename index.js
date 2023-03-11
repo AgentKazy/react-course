@@ -1,20 +1,8 @@
-const people = [
-  { name: 'Kazy', rank: 'Hero' },
-  { name: 'Kalethyr', rank: 'Adventurer' },
-  { name: 'Mythwind', rank: 'Hero' },
-  { name: 'Kaelar', rank: 'Captain' },
-];
+const heroes = ['Kazy', 'Kalethyr', 'Mythwind'];
+const blog = { title: 'New and Improved', author: 'Korgash' };
 
-// Filter method
-const rank = people.filter((person) => {
-  return person.rank == 'Hero';
-});
+// console.log(...heroes);
 
-console.log(rank, people);
+const idBlog = { ...blog, id: 1 };
 
-// Map method
-const names = people.map((char) => {
-  return char.name;
-});
-
-console.log(names, people);
+console.log(idBlog);
