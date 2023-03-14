@@ -1,10 +1,11 @@
 import './App.css';
+import { useState } from 'react';
 
 function App() {
-  let name = 'Kazy';
+  const [name, setName] = useState('Kazy');
 
   const handleClick = () => {
-    name = 'Kalethyr';
+    setName('Kalethyr');
     console.log(name);
   };
 
