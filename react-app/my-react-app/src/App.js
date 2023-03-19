@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import Title from './components/Title';
 
 function App() {
   // useState must be used at the top level of a component
@@ -24,6 +25,8 @@ function App() {
 
   return (
     <div className="App">
+      <Title />
+
       {showEvents && (
         <div>
           <button onClick={() => setShowEvents(false)}>Hide events</button>
