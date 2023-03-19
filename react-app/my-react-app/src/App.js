@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  // useState must be used at the top level of a component
+  // useState must be used inside the scope of a component
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     { title: 'Adventure to Mount Doom', id: 1 },
