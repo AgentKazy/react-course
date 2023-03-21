@@ -23,9 +23,15 @@ function App() {
     console.log(id);
   };
 
+  const subtitle = 'All the latest adventures in Middle Earth';
+
   return (
     <div className="App">
-      <Title />
+      <Title title="Events in The Lonely Mountain" subtitle={subtitle} />
+      <Title
+        title="Events in Rivendell"
+        subtitle="Rest in the House of Elrond"
+      />
 
       {showEvents && (
         <div>
