@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Title from './components/Title';
+import Modal from './components/Modal';
 
 function App() {
   // useState must be used at the top level of a component
@@ -50,6 +51,21 @@ function App() {
             <button onClick={() => handleClick(event.id)}>Delete event</button>
           </React.Fragment>
         ))}
+
+      {/* <Modal>
+        <h2>10% Off Cupon Code!</h2>
+        <p>Use the code KAZY10 at the checkout.</p>
+      </Modal> */}
+      <Modal>
+        <h2>Terms and Conditions</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima,
+          iure earum nostrum sed a, odio corrupti excepturi consectetur quae
+          quibusdam! Impedit doloremque eos quibusdam dicta molestiae quaerat ex
+          deserunt.
+        </p>
+        <a href="#">Find out more...</a>
+      </Modal>
     </div>
   );
 }
