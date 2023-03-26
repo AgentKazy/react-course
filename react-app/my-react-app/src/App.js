@@ -4,7 +4,7 @@ import Title from './components/Title';
 import Modal from './components/Modal';
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   // useState must be used at the top level of a component
   // useState must be used inside the scope of a component
   const [showEvents, setShowEvents] = useState(true);
@@ -73,6 +73,10 @@ function App() {
           <a href="#">Find out more...</a>
         </Modal>
       )}
+
+      <div>
+        <button onClick={() => setShowModal(true)}>Show Modal</button>
+      </div>
     </div>
   );
 }
