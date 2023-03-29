@@ -19,3 +19,9 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
 }
+
+.modal .sales-btn {
+  border: 4px solid #333;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}

@@ -55,7 +55,7 @@ function App() {
         <p>Use the code KAZY10 at the checkout.</p>
       </Modal> */}
       {showModal && (
-        <Modal handleClose={handleClose} isSalesModal={false}>
+        <Modal handleClose={handleClose} isSalesModal={true}>
           <h2>Terms and Conditions</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
