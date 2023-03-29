@@ -31,21 +31,3 @@ button {
   margin: 1rem auto;
   cursor: pointer;
 }
-
-.title {
-  display: inline-block;
-  padding: 3rem 6rem;
-  background: #f4f4f4;
-  border-radius: 8px;
-  font-weight: normal;
-  margin-bottom: 1rem;
-}
-
-.subtitle {
-  display: inline-block;
-  color: #555;
-  font-weight: normal;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #f4f4f4;
-  margin: 1rem 0 6rem 0;
-}
