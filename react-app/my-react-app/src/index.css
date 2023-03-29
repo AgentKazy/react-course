@@ -16,6 +16,22 @@ code {
     monospace;
 }
 
+p,
+h1,
+h2 {
+  color: #555;
+}
+
+button {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 1rem;
+  border: 0;
+  border-radius: 4px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
 .title {
   display: inline-block;
   padding: 3rem 6rem;
