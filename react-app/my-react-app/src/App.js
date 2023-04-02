@@ -10,13 +10,14 @@ function App() {
   // useState must be used at the top level of a component
   // useState must be used inside the scope of a component
   const [showEvents, setShowEvents] = useState(true);
-  const [events, setEvents] = useState([
-    { title: 'Adventure to Mount Doom', id: 1 },
-    { title: 'Escaping Moria', id: 2 },
-    { title: 'Resting in Rivendell', id: 3 },
-  ]);
+  const [events, setEvents] = useState([]);
 
-  console.log(showModal);
+  const addEvent = (event) => {
+    setEvents((prevEvents) => {
+      return [...prevEvents, event];
+    });
+    setShowModal(false);
+  };
 
   const handleClick = (id) => {
     setEvents((prevEvents) => {
@@ -25,10 +26,6 @@ function App() {
       });
     });
     console.log(id);
-  };
-
-  const handleClose = () => {
-    setShowModal(false);
   };
 
   const subtitle = 'All the latest adventures in Middle Earth';
@@ -56,8 +53,8 @@ function App() {
         <p>Use the code KAZY10 at the checkout.</p>
       </Modal> */}
       {showModal && (
-        <Modal handleClose={handleClose} isSalesModal={true}>
-          <NewEventForm />
+        <Modal isSalesModal={true}>
+          <NewEventForm addEvent={addEvent} />
         </Modal>
       )}
 
