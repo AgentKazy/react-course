@@ -30,7 +30,7 @@ function App() {
   // Handle a choice
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
-    // Can't check choices here
+    // Can't compare choices here
   };
 
   // Compare 2 selected cards
@@ -48,7 +48,7 @@ function App() {
         });
         resetTurn();
       } else {
-        setTimeout(() => resetTurn(), 1000);
+        setTimeout(() => resetTurn(), 500);
       }
     }
   }, [choiceOne, choiceTwo]);
