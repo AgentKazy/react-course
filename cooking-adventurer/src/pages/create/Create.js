@@ -45,7 +45,7 @@ export default function Create() {
     if (data) {
       history.push('/');
     }
-  }, [data]);
+  }, [data, history]);
 
   return (
     <div className="create">
