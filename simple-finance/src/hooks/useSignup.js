@@ -28,10 +28,10 @@ export const useSignup = () => {
       setError(null);
     } catch (err) {
       console.log(err.message);
-      setError(err.messsage);
+      setError(err.message);
       setIsPending(false);
     }
   };
 
-  return { error, isPending, signup };
+  return { signup, error, isPending };
 };
