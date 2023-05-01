@@ -16,17 +16,19 @@ export default function Login() {
     <form className={styles['login-form']} onSubmit={handleSubmit}>
       <h2>Login</h2>
       <label>
-        <span>Email:</span>
+        {/* <span>Email:</span> */}
         <input
           type="email"
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
       </label>
       <label>
-        <span>Password:</span>
+        {/* <span>Password:</span> */}
         <input
           type="password"
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
