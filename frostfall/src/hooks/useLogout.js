@@ -33,6 +33,8 @@ export const useLogout = () => {
   };
 
   useEffect(() => {
+    // setIsCancelled(false);
+
     return () => setIsCancelled(true);
   }, []);
 
