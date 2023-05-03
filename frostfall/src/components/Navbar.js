@@ -10,7 +10,7 @@ export default function Navbar() {
       <ul>
         <li className="logo">
           <img src={Snowflake} alt="Frostfall logo of a snowflake" />
-          <span>Frostfall</span>
+          <span className="brand">Frostfall</span>
         </li>
 
         <li>
