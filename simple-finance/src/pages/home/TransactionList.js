@@ -1,13 +1,19 @@
+import { useFirestore } from '../../hooks/useFirestore';
+
 // Styles
 import styles from './Home.module.css';
 
 export default function TransactionList({ transactions }) {
+  const { deleteDocument, response } = useFirestore('transactions');
+  console.log(response);
+
   return (
     <ul className={styles.transactions}>
-      {transactions.map((transactions) => (
-        <li key={transactions.id}>
-          <p className={styles.name}>{transactions.name}</p>
-          <p className={styles.amount}>{transactions.amount}€</p>
+      {transactions.map((transaction) => (
+        <li key={transaction.id}>
+          <p className={styles.name}>{transaction.name}</p>
+          <p className={styles.amount}>{transaction.amount}€</p>
+          <button onClick={() => deleteDocument(transaction.id)}>X</button>
         </li>
       ))}
     </ul>
