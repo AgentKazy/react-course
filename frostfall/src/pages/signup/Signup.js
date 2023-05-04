@@ -10,7 +10,7 @@ export default function Signup() {
   const [password, setPassword] = useState('');
   const [thumbnail, setThumbnail] = useState(null);
   const [thumbnailError, setThumbnailError] = useState(null);
-  const { signup, isPending, error } = useSignup();
+  const { signup, error, isPending } = useSignup();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -67,6 +67,7 @@ export default function Signup() {
           value={email}
         />
       </label>
+
       <label>
         {/* <span>Password:</span> */}
         <input
@@ -77,6 +78,7 @@ export default function Signup() {
           value={password}
         />
       </label>
+
       <label>
         <span>Profile picture:</span>
         <input required type="file" onChange={handleFileChange} />
