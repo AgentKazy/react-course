@@ -47,17 +47,17 @@ export default function Signup() {
     <form className="auth-form" onSubmit={handleSubmit}>
       <h2>Sign up</h2>
       <label>
-        <label>
-          {/* <span>Display name:</span> */}
-          <input
-            required
-            type="text"
-            placeholder="Display name"
-            onChange={(e) => setDisplayName(e.target.value)}
-            value={displayName}
-          />
-        </label>
+        {/* <span>Display name:</span> */}
+        <input
+          required
+          type="text"
+          placeholder="Display name"
+          onChange={(e) => setDisplayName(e.target.value)}
+          value={displayName}
+        />
+      </label>
 
+      <label>
         {/* <span>Email:</span> */}
         <input
           required
