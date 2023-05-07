@@ -2,6 +2,9 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
+// Firebase further reading
+// https://firebase.google.com/docs/build
+
 const firebaseConfig = {
   apiKey: 'AIzaSyCjWGRrF9ALyFg-eoKqQBuByeg_YSER_8o',
   authDomain: 'kazy-readinglist.firebaseapp.com',
